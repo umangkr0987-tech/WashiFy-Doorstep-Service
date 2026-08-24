@@ -1,0 +1,1399 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 8%;
+background:#172b4d;
+color:#fff;
+position:fixed;
+width:100%;
+top:0;
+z-index:999;
+height:90px;
+}
+
+.logo{
+    
+font-size:25px;
+font-weight:bold;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+}
+
+.nav-links li{
+margin-left:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#ffd54f;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1400&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content{
+color:white;
+max-width:700px;
+}
+
+.hero h1{
+font-size:52px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+line-height:1.6;
+}
+
+.btn{
+background:#ffd54f;
+padding:15px 35px;
+text-decoration:none;
+color:black;
+font-weight:bold;
+border-radius:40px;
+transition:.3s;
+}
+
+.btn:hover{
+background:white;
+}
+
+section{
+padding:90px 8%;
+}
+
+h2{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#0d6efd;
+}
+
+.service-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:35px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#0d6efd;
+margin-bottom:20px;
+}
+
+
+
+.feedback-box{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.review{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+}
+
+.review p{
+margin:15px 0;
+}
+
+.contact form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+.contact input,
+.contact select,
+.contact textarea{
+padding:15px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:10px;
+font-size:16px;
+}
+
+.contact textarea{
+height:150px;
+resize:none;
+}
+
+.contact button{
+padding:15px;
+border:none;
+background:#0d6efd;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.contact button:hover{
+background:#084fc7;
+}
+
+/* Other Car Name field */
+
+#otherCarBox {
+    width: 100%;
+    margin-top: 15px;
+    animation: showOtherCar 0.3s ease;
+}
+
+#otherCarBox label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#otherCarBox input {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+#otherCarBox input:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.1);
+}
+
+/* =========================
+   OWNER CARD
+========================= */
+
+.owner-card {
+    width: 88%;
+
+    margin: -45px auto 0;
+
+    position: relative;
+    z-index: 2;
+
+    padding: 20px 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+.owner-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf4ff;
+
+    font-size: 25px;
+}
+
+
+.owner-info span {
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #087bea;
+}
+
+
+.owner-info h3 {
+    margin: 3px 0;
+
+    font-size: 19px;
+
+    color: #172033;
+}
+
+
+.owner-info p {
+    margin: 0;
+
+    font-size: 13px;
+
+    color: #737b89;
+}
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+.contact-section {
+    width: 100%;
+    padding: 90px 6%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+
+    gap: 60px;
+    align-items: center;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.contact-content {
+    min-width: 0;
+}
+
+.contact-tag {
+    display: inline-block;
+
+    color: #087bea;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+.contact-content h2 {
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.15;
+
+    color: #172033;
+
+    margin: 0 0 20px;
+}
+
+.contact-content h2 span {
+    color: #087bea;
+}
+
+.contact-description {
+    max-width: 580px;
+
+    color: #687386;
+    font-size: 16px;
+    line-height: 1.7;
+
+    margin: 0 0 35px;
+}
+
+
+/* =========================
+   CONTACT ITEM
+========================= */
+
+.contact-item {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+
+    min-width: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf4ff;
+
+    border-radius: 12px;
+
+    font-size: 20px;
+}
+
+.contact-item > div:last-child {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item span {
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #087bea;
+
+    margin-bottom: 3px;
+}
+
+.contact-item a,
+.contact-item strong {
+    max-width: 100%;
+
+    color: #172033;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    overflow-wrap: anywhere;
+    word-break: break-word;
+}
+
+.contact-item a:hover {
+    color: #087bea;
+}
+
+.contact-item p {
+    margin: 3px 0 0;
+
+    color: #7a8392;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================
+   RIGHT CARD
+========================= */
+
+.contact-card {
+    width: 100%;
+    min-width: 0;
+
+    padding: 32px;
+
+    background: #f7f9fc;
+
+    border: 1px solid rgba(0, 0, 0, 0.07);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.07);
+}
+
+.contact-card-header span {
+    font-size: 11px;
+
+    color: #087bea;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.contact-card-header h3 {
+    font-size: 29px;
+
+    color: #172033;
+
+    line-height: 1.2;
+
+    margin: 8px 0 10px;
+}
+
+.contact-card-header p {
+    color: #687386;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    margin: 0;
+}
+
+
+/* =========================
+   OWNER
+========================= */
+
+.owner-contact {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 20px 0;
+
+    margin: 20px 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.owner-contact-icon {
+    width: 52px;
+    height: 52px;
+
+    min-width: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf4ff;
+
+    border-radius: 50%;
+
+    font-size: 23px;
+}
+
+.owner-contact > div:last-child {
+    min-width: 0;
+}
+
+.owner-contact span {
+    font-size: 9px;
+
+    color: #087bea;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+.owner-contact h4 {
+    margin: 3px 0;
+
+    color: #172033;
+
+    font-size: 18px;
+}
+
+.owner-contact p {
+    margin: 0;
+
+    color: #7a8392;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.contact-buttons {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+.call-button,
+.whatsapp-button {
+    min-width: 0;
+
+    padding: 13px 10px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+.call-button {
+    background: #087bea;
+    color: white;
+}
+
+.whatsapp-button {
+    background: #25d366;
+    color: white;
+}
+
+.call-button:hover,
+.whatsapp-button:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   WORKING HOURS
+========================= */
+
+.working-hours {
+    width: 100%;
+}
+
+.working-hours h4 {
+    margin: 0 0 10px;
+
+    color: #172033;
+
+    font-size: 15px;
+}
+
+.working-hours p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10px;
+
+    color: #687386;
+
+    font-size: 13px;
+
+    margin: 0;
+}
+
+.working-hours p span {
+    color: #172033;
+
+    font-weight: 600;
+
+    text-align: right;
+}
+
+/* =========================
+   OWNER
+========================= */
+
+.owner-contact {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 20px 0;
+
+    margin: 20px 0;
+
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+
+.owner-contact-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #eaf4ff;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+
+
+.owner-contact span {
+    font-size: 10px;
+
+    color: #087bea;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+.owner-contact h4 {
+    margin: 3px 0;
+
+    color: #172033;
+
+    font-size: 18px;
+}
+
+
+.owner-contact p {
+    margin: 0;
+
+    color: #7a8392;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.contact-buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.call-button,
+.whatsapp-button {
+    padding: 13px 10px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s;
+}
+
+
+.call-button {
+    background: #087bea;
+    color: white;
+}
+
+
+.whatsapp-button {
+    background: #25d366;
+    color: white;
+}
+
+
+.call-button:hover,
+.whatsapp-button:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   WORKING HOURS
+========================= */
+
+.working-hours {
+    padding-top: 5px;
+}
+
+
+.working-hours h4 {
+    margin-bottom: 10px;
+
+    color: #172033;
+
+    font-size: 15px;
+}
+
+
+.working-hours p {
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    color: #687386;
+
+    font-size: 13px;
+}
+
+
+.working-hours p span {
+    color: #172033;
+
+    font-weight: 600;
+}
+
+
+
+/* Smooth appearance */
+
+@keyframes showOtherCar {
+
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Mobile */
+
+
+
+footer{
+background:#172b4d;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.menu-btn{
+display:block;
+}
+
+.nav-links{
+position:absolute;
+top:70px;
+left:-100%;
+background:#172b4d;
+width:100%;
+flex-direction:column;
+text-align:center;
+transition:.4s;
+}
+
+.nav-links.active{
+left:0;
+}
+
+.nav-links li{
+margin:20px 0;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+.hero p{
+font-size:17px;
+}
+
+}
+
+/* Pricing */
+
+.pricing{
+    padding:80px 8%;
+    background:#f8f9fa;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.pricing h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    text-align:center;
+    color:#666;
+    margin-bottom:50px;
+}
+
+.pricing-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#0077ff;
+    margin-bottom:10px;
+}
+
+.card h4{
+    color:#444;
+    margin-bottom:15px;
+}
+
+.price{
+    font-size:35px;
+    color:#27ae60;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.card ul{
+    list-style:none;
+    padding:0;
+}
+
+.card ul li{
+    margin:12px 0;
+    color:#555;
+}
+
+.card a{
+    display:inline-block;
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    background:#ffd54f;
+    color:black;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    text-decoration:none;
+}
+
+.card a:hover{
+    background:royalblue;
+}
+
+.popular{
+    border:3px solid #0077ff;
+}
+
+.badge{
+    position:absolute;
+    top:-12px;
+    right:20px;
+    background:#ff5722;
+    color:#fff;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:bold;
+}
+
+
+/* Tablet */
+
+@media(max-width:768px){
+
+.pricing{
+    padding:60px 20px;
+}
+
+.pricing h2{
+    font-size:32px;
+}
+
+.price{
+    font-size:30px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.pricing h2{
+    font-size:28px;
+}
+
+.subtitle{
+    font-size:14px;
+}
+
+.card{
+    padding:20px;
+}
+
+.price{
+    font-size:28px;
+}
+
+.card button{
+    font-size:16px;
+}
+
+  #otherCarBox {
+        margin-top: 12px;
+    }
+
+    #otherCarBox label {
+        font-size: 14px;
+    }
+
+    #otherCarBox input {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+  /* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 60px 16px;
+    }
+
+    .contact-container {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+
+    /* LEFT */
+
+    .contact-content {
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .contact-tag {
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 10px;
+    }
+
+    .contact-content h2 {
+        font-size: 30px;
+
+        line-height: 1.2;
+
+        margin-bottom: 15px;
+    }
+
+    .contact-description {
+        width: 100%;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+
+        margin-bottom: 28px;
+    }
+
+
+    /* CONTACT ITEMS */
+
+    .contact-item {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        margin-bottom: 18px;
+
+        text-align: left;
+    }
+
+    .contact-icon {
+        width: 44px;
+        height: 44px;
+
+        min-width: 44px;
+
+        border-radius: 10px;
+
+        font-size: 18px;
+    }
+
+    .contact-item span {
+        font-size: 9px;
+
+        letter-spacing: 1.2px;
+    }
+
+    .contact-item a,
+    .contact-item strong {
+        font-size: 14px;
+
+        line-height: 1.3;
+    }
+
+    .contact-item p {
+        font-size: 11px;
+
+        line-height: 1.3;
+    }
+
+
+    /* RIGHT CARD */
+
+    .contact-card {
+        width: 100%;
+
+        padding: 24px 18px;
+
+        border-radius: 17px;
+
+        box-shadow:
+            0 10px 25px rgba(0, 0, 0, 0.07);
+    }
+
+    .contact-card-header {
+        text-align: left;
+    }
+
+    .contact-card-header span {
+        font-size: 9px;
+    }
+
+    .contact-card-header h3 {
+        font-size: 24px;
+
+        margin: 7px 0;
+    }
+
+    .contact-card-header p {
+        font-size: 13px;
+    }
+
+
+    /* OWNER */
+
+    .owner-contact {
+        padding: 17px 0;
+
+        margin: 18px 0;
+
+        gap: 12px;
+    }
+
+    .owner-contact-icon {
+        width: 46px;
+        height: 46px;
+
+        min-width: 46px;
+
+        font-size: 20px;
+    }
+
+    .owner-contact h4 {
+        font-size: 16px;
+    }
+
+    .owner-contact span {
+        font-size: 8px;
+    }
+
+    .owner-contact p {
+        font-size: 11px;
+    }
+
+
+    /* BUTTONS */
+
+    .contact-buttons {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+
+        margin-bottom: 22px;
+    }
+
+    .call-button,
+    .whatsapp-button {
+        width: 100%;
+
+        min-height: 45px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 12px;
+
+        font-size: 14px;
+    }
+
+
+    /* HOURS */
+
+    .working-hours {
+        width: 100%;
+    }
+
+    .working-hours h4 {
+        font-size: 14px;
+    }
+
+    .working-hours p {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 3px;
+
+        font-size: 12px;
+    }
+
+    .working-hours p span {
+        text-align: left;
+    }
+
+}
+
+
+/* =================================================
+   VERY SMALL MOBILE
+================================================= */
+
+@media (max-width: 360px) {
+
+    .contact-section {
+        padding: 50px 12px;
+    }
+
+    .contact-content h2 {
+        font-size: 27px;
+    }
+
+    .contact-card {
+        padding: 22px 15px;
+    }
+
+    .contact-item a,
+    .contact-item strong {
+        font-size: 13px;
+    }
+
+}
+}
+
+/* =========================
+   WASH CATEGORY & PRICE
+========================= */
+
+.wash-form-group {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.wash-form-group label {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #333;
+}
+
+.wash-form-group select {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 14px;
+
+    border: 1px solid #d5d9df;
+    border-radius: 8px;
+
+    background: #fff;
+
+    color: #333;
+    font-size: 15px;
+
+    outline: none;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition: 0.2s;
+}
+
+.wash-form-group select:focus {
+    border-color: #087bea;
+
+    box-shadow: 0 0 0 2px rgba(8, 123, 234, 0.08);
+}
+
+.wash-form-group select:disabled {
+    background: #f1f3f5;
+
+    color: #888;
+
+    cursor: not-allowed;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .wash-form-group {
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+    .wash-form-group label {
+        font-size: 13px;
+
+        margin-bottom: 6px;
+    }
+
+    .wash-form-group select {
+        width: 100%;
+
+        height: 46px;
+
+        padding: 0 12px;
+
+        font-size: 14px;
+
+        border-radius: 7px;
+    }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 380px) {
+
+    .wash-form-group select {
+        height: 44px;
+
+        font-size: 13px;
+
+        padding: 0 10px;
+    }
+
+    .wash-form-group label {
+        font-size: 12px;
+    }
+
+}

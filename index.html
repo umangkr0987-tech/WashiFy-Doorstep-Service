@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WashiFy- Doorstep Wash</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="basic-wash.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<img src="washify.png" alt="Logo">
+<!-- Washify -->
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#pricing">Packages</a></li>
+<li><a href="#contact">Appointment</a></li>
+<li><a href="#feedback">Feedback</a></li>
+<li><a href="#contacts">Contact Us</a></li>
+<li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+
+
+
+</ul>
+
+<div class="menu-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+
+</nav>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Premium Vehicle Washing Service</h1>
+
+<p>
+We make your car shine like new.
+Professional cleaning with affordable prices.
+</p>
+
+<a href="#contact" class="btn">Book Now</a>
+
+</div>
+
+</section>
+
+<!-- Services -->
+
+<section id="services" class="services">
+
+<h2>Our Services</h2>
+
+<div class="service-box">
+
+<div class="card">
+<i class="fa-solid fa-soap"></i>
+<h3>Exterior Wash</h3>
+<p>Complete body cleaning with premium shampoo.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-spray-can-sparkles"></i>
+<h3>Interior Cleaning</h3>
+<p>Dust removal, vacuum cleaning and polishing.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-car-side"></i>
+<h3>Doorstep Service</h3>
+<p>We come to you,Save time and effort.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-car-side"></i>
+<h3>Car Polishing</h3>
+<p>Premium polish to restore shine.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+
+
+
+
+<!-- Pricing -->
+
+<section class="pricing" id="pricing">
+    <div class="container">
+        <h2>Our Car Wash Packages</h2>
+        <p class="subtitle">Affordable Prices with Premium Quality Service</p>
+
+        <div class="pricing-grid">
+
+            <div class="card">
+                <h3>Basic Wash</h3>
+                <p>Quick and Affordable wash to keep your car clean,fresh and shining.</p>
+                
+                <ul>
+                    <li>✔ Fresh Car Look</li>
+                    <li>✔ Everyday Car Care</li>
+                    
+                </ul>
+
+                <a href="#contact" >Book Now</a>
+                <a href="http://127.0.0.1:5500/basic-wash.html" >Details</a>
+            </div>
+
+            <div class="card popular">
+               <span class="badge">Most Popular</span>
+
+                <h3>Premium Wash</h3>
+                <p>Deep cleaning with a premium finish</p>
+      
+                <ul>
+                    <li>✔ Premium Car Care</li>
+                    <li>✔ Enhanced Shine</li>
+                </ul>
+                
+                   <a href="#contact" >Book Now</a>
+                   <a href="http://127.0.0.1:5500/premium-wash.html" >Details</a>
+            </div>
+
+            <div class="card">
+                <!-- <span class="badge">Most Popular</span> -->
+
+                <h3>Complete Car Spa</h3>
+                <p>Complete car care package with interior and exterior detailing</p>
+
+                <ul>
+                    <li>✔ All-Round Car Care</li>
+                    <li>✔ Showroom-Like Shine</li>
+                   
+                </ul>
+
+                <a href="#contact" >Book Now</a>
+                <a href="http://127.0.0.1:5500/complete-car-spa.html" >Details</a>
+            </div>
+
+            <div class="card">
+                <h3>Interior Basic Cleaning</h3>
+                <p>Basic interior cleaning to keep your car fresh and hygienic</p>
+
+                <ul>
+                    <li>✔ Dust & Dirt Removal</li>
+                    <li>✔ Fresh Cabin Feel</li>
+                
+                </ul>
+
+                <a href="#contact" >Book Now</a>
+                <a href="http://127.0.0.1:5500/interior-wash.html" >Details</a>
+            </div>
+
+            <!-- <div class="card">
+                <h3>Membership</h3>
+                <p>Exclusive membership for regular customers with special benefits</p>
+
+               
+
+                <a href="http://127.0.0.1:5500/membership.html" >Membership</a>
+            </div> -->
+
+            <!-- <div class="card">
+                <h3>🚚 Pickup / Large SUV</h3>
+                <h4>Ultimate Package</h4>
+                <p class="price">₹1799</p>
+
+                <ul>
+                    <li>✔ Deep Foam Wash</li>
+                    <li>✔ Interior Detailing</li>
+                    <li>✔ Engine Bay Cleaning</li>
+                    <li>✔ Wax Protection</li>
+                </ul>
+
+                <a href="#contact" >Book Now</a>
+            </div> -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+<h2>Appointment</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="email" id="email" placeholder="Your Email">
+
+<input type="tel" id="phone" placeholder="Your Phone">
+
+<!-- Car Company -->
+<select id="carCategory" onchange="updateCars()">
+                <option value="">Select Car Company</option>
+                <option value="Honda">Honda</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="Kia">Kia</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Tata">Tata</option>
+
+                 <option value="MarutiSuzuki">Maruti Suzuki</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="BMW">BMW</option>
+                <option value="Ford">Ford</option>
+
+                 <option value="Skoda">Skoda</option>
+                <option value="MG">MG</option>
+                <option value="Renault">Renault</option>
+                <option value="Nissan">Nissan</option>
+                <option value="MercedesBenz">Mercedes-Benz</option>
+
+                v
+
+                 <option value="Jeep">Jeep</option>
+                <option value="Audi">Audi</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Datsun">Datsun</option>
+                <option value="Citroen">Citroen</option>
+
+                 <option value="Fiat">Fiat</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Lexus">Lexus</option>
+                <option value="LandRover">Land-Rover</option>
+                <option value="Volvo">Volvo</option>
+
+                 <option value="BYD">BYD</option>
+                <option value="Bajaj">Bajaj</option>
+                <option value="Force">Force</option>
+                <option value="Isuzu">Isuzu</option>
+                <option value="Jaguar">Jaguar</option>
+
+              
+                
+                
+            </select>
+
+
+
+
+ 
+
+     <!-- Car Name -->
+        <div class="form-group">
+            <label for="carName">Car/Vechile Name</label>
+
+            <select id="carName" onchange="checkOtherCar()" disabled>
+                <option value="">Select Car Name</option>
+            </select>
+        </div>
+
+       
+
+     <!-- Other Car Name -->
+<div class="form-group" id="otherCarBox" style="display: none;">
+
+    <label for="otherCarName">
+        Enter Your Car/Vechile Name
+    </label>
+
+    <input
+        type="text"
+        id="otherCarName"
+        placeholder="Enter your name"
+        disabled
+    >
+
+</div>
+   
+<!-- Car Category -->
+<div class="form-group wash-form-group">
+    <label for="washCategory">Car Category</label>
+
+    <select id="washCategory" onchange="changeWashPrice()" required>
+        <option value="">Select Car Category</option>
+        <option value="Hatchback">Hatchback</option>
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+    </select>
+</div>
+
+
+<!-- Washing Price -->
+<div class="form-group wash-form-group">
+    <label for="washAmount">Washing Price</label>
+
+    <select id="washAmount" disabled required>
+        <option value="">Select Category First</option>
+    </select>
+</div>
+         <!-- Washing Price -->
+        <!-- <div class="form-group">
+            <label for="washingPrice">Washing Price</label>
+
+            <select id="washingPrice" disabled>
+                <option value="">Select Washing Price</option>
+            </select>
+        </div> -->
+
+       <input type="text" id="VechileNo" placeholder="Vehicle Number: JH01FG6548">
+
+        
+       <label>Booking Time Slot</label>
+       <input type="time" id="time" required>   
+       <input type="date" id="date" required>
+
+
+
+       
+ <select id="payment" required>
+        <option value="">Select Payment Method</option>
+        <option value="Cash">Cash</option>
+        <option value="Online">Online</option>
+    </select>
+
+        <textarea id="address" placeholder="Pickup / Service Address" rows="4" required></textarea>
+
+
+
+        <textarea id="intruction" placeholder="Any Appointment Query? (Optional)" rows="4"></textarea>
+
+
+
+    
+
+<button type="submit">Get Appointment</button>
+
+</form>
+
+</section>
+
+
+<!-- Feedback -->
+
+<section id="feedback" class="feedback">
+
+<h2>Customer Feedback (Testimonial) </h2>
+
+<div class="feedback-box">
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Best car wash service. Highly recommended!"</p>
+<h4>- Rahul Tiwary</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Affordable price and excellent cleaning."</p>
+<h4>- Priya Singh</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐
+<p>"Very professional team."</p>
+<h4>- Amit Sharma</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Doorstep wash is super convenient."</p>
+<h4>- Aakash Mishra</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>"Team Behaviour is Friendly."</p>
+<h4>- Suresh Prajapati</h4>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐
+<p>"Superb Service."</p>
+<h4>- Aryan Singh</h4>
+</div>
+
+</div>
+
+</section>
+
+<br>
+
+<!-- =========================
+     CONTACT US SECTION
+========================= -->
+
+<section class="contact-section" id="contacts">
+
+    <div class="contact-container">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="contact-content">
+
+            <h2 style="color:#087bea">Contact Us</h2>
+
+            <h2>
+                Let's Take Care
+                Of Your Car.
+            </h2>
+
+            <p class="contact-description">
+                Have a question, want to book a service,
+                or need more information? Get in touch with
+                us and our team will be happy to help.
+            </p>
+
+
+            <!-- PHONE -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+                    <span>CALL US</span>
+
+                    <a href="tel:+919341676414,+919508477916">
+                        +91 93416 76414, +91 95084 77916
+                    </a>
+
+                    <p>
+                        Available for bookings & enquiries
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- WHATSAPP -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    💬
+                </div>
+
+                <div>
+                    <span>WHATSAPP</span>
+
+                    <a
+                        href="https://wa.me/919341676414"
+                        target="_blank">
+
+                        Chat on WhatsApp
+
+                    </a>
+
+                    <p>
+                        Quick booking & service enquiries
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉️
+                </div>
+
+                <div>
+                    <span>EMAIL</span>
+
+                    <a href="mailto:washify.doorstep@gmail.com">
+                        washify.doorstep@gmail.com
+                    </a>
+
+                    <p>
+                        For general enquiries
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE AREA -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+                    <span>SERVICE AREA</span>
+
+                    <strong>
+                       Ranchi - Morabaadi, Lalpur, Bariatu, Kanke, Harmu, Argora, Lalpur, Ratu Road, and nearby areas.
+                    </strong>
+
+                    <p>
+                        Home pickup & service available
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE -->
+
+        <div class="contact-card">
+
+            <div class="contact-card-header">
+
+                <span>
+                    🚗 WashiFy
+                </span>
+
+                <h3>
+                    Book Your Car Wash
+                </h3>
+
+                <p>
+                    Choose a convenient date and time
+                    for your service.
+                </p>
+
+            </div>
+
+
+            <!-- OWNER -->
+
+            <!-- <div class="owner-contact">
+
+                <div class="owner-contact-icon">
+                    👨‍💼
+                </div>
+
+                <div>
+
+                    <span>
+                        FOUNDER & OWNER
+                    </span>
+
+                    <h4>
+                        Aadarsh Kumar
+                    </h4>
+
+                    <p>
+                        Founder, Washify
+                    </p>
+
+                </div>
+
+                 <div class="owner-contact-icon">
+                    👨‍💼
+                </div>
+
+                <div>
+
+                    <span>
+                        CO-FOUNDER
+                    </span>
+
+                    <h4>
+                        Umang Kumar
+                    </h4>
+
+                    <p>
+                        Co-Founder, Washify
+                    </p>
+
+                </div>
+
+            </div> -->
+
+
+            <!-- CONTACT BUTTONS -->
+
+            <div class="contact-buttons">
+
+                <a
+                    href="tel:+919341676414"
+                    class="call-button">
+
+                    📞 Call Now
+
+                </a>
+
+
+                <a
+                    href="https://wa.me/919508477916"
+                    target="_blank"
+                    class="whatsapp-button">
+
+                    💬 WhatsApp
+
+                </a>
+
+            </div>
+
+
+            <div class="working-hours">
+
+                <h4>
+                    🕒 Working Hours
+                </h4>
+
+                <p>
+                    Monday – Sunday
+                    <span>6:00 AM – 8:30 PM</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+            <!-- OWNER CARD
+
+            <div class="owner-card">
+
+                <div class="owner-icon">
+                    👨‍💼
+                </div>
+
+                <div class="owner-info">
+
+                    <span>
+                        FOUNDER & OWNER
+                    </span>
+
+                    <h3>
+                        Aadarsh Kumar
+                    </h3>
+
+                    <p>
+                        Founder, Washify
+                    </p>
+
+                </div>
+
+                   <div class="owner-icon">
+                    👨‍💼
+                </div>
+
+                <div class="owner-info">
+
+                    <span>
+                        CO-FOUNDER
+                    </span>
+
+                    <h3>
+                        Umang Kumar
+                    </h3>
+
+                    <p>
+                        Co-Founder, Washify
+                    </p>
+
+                </div>
+
+            </div> -->
+
+<!-- =========================
+     IMPORTANT NOTE
+========================= -->
+
+<section class="note-section">
+
+    <div class="note-box">
+
+        <h3>
+            📌 Please Note
+        </h3>
+
+        <p>
+           For the smooth delivery of our service, customers are kindly requested to provide access to a suitable water and electricity supply at the service location.
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        WashiFy.
+    </p>
+
+    <p >
+        © 2026 WashiFy. All rights reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

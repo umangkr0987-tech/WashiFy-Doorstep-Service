@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Membership Booking | ShineWash</title>
+
+    <link rel="stylesheet"
+          href="membership-booking.css">
+
+</head>
+
+
+<body>
+
+
+<section class="membership-booking">
+
+    <div class="booking-container">
+
+
+        <!-- HEADING -->
+
+        <div class="booking-heading">
+
+            <span>MEMBERSHIP BOOKING</span>
+
+            <h1>Complete Your Booking</h1>
+
+            <p>
+                Enter your vehicle and appointment details.
+            </p>
+
+        </div>
+
+
+
+        <!-- SELECTED PLAN -->
+
+        <div class="selected-plan">
+
+            <h3>Selected Membership Plan</h3>
+
+
+            <div class="selected-details">
+
+
+                <div class="detail-box">
+
+                    <span>Plan Type</span>
+
+                    <strong id="membershipDuration">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <span>Service</span>
+
+                    <strong id="membershipPackage">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <span>Number of Washes</span>
+
+                    <strong id="membershipWashes">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-box">
+
+                    <span>Price</span>
+
+                    <strong id="membershipPrice">
+                        -
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BOOKING FORM -->
+
+        <form id="membershipForm">
+
+
+            <!-- VEHICLE CATEGORY -->
+
+            <div class="form-group">
+
+                <label for="vehicleCategory">
+                    Vehicle Category
+                </label>
+
+                <select
+                    id="vehicleCategory"
+                    required
+                >
+
+                    <option value="">
+                        Select Vehicle Category
+                    </option>
+
+                    <option value="Hatchback">
+                        Hatchback
+                    </option>
+
+                    <option value="Sedan">
+                        Sedan
+                    </option>
+
+                    <option value="SUV">
+                        SUV
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- VEHICLE NAME -->
+
+            <div class="form-group">
+
+                <label for="vehicleName">
+                    Car / Vehicle Name
+                </label>
+
+                <select
+                    id="vehicleName"
+                    required
+                    disabled
+                >
+
+                    <option value="">
+                        Select Vehicle Category First
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- OTHER VEHICLE -->
+
+            <div
+                class="form-group other-vehicle-group"
+                id="otherVehicleGroup"
+            >
+
+                <label for="otherVehicleName">
+                    Enter Your Vehicle Name
+                </label>
+
+                <input
+                    type="text"
+                    id="otherVehicleName"
+                    placeholder="Enter your vehicle name"
+                    disabled
+                >
+
+            </div>
+
+
+
+            <!-- VEHICLE NUMBER -->
+
+            <div class="form-group">
+
+                <label for="vehicleNumber">
+                    Vehicle Number
+                </label>
+
+                <input
+                    type="text"
+                    id="vehicleNumber"
+                    placeholder="e.g. JH01AB1234"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- DATE -->
+
+            <div class="form-group">
+
+                <label for="bookingDate">
+                    Appointment Date
+                </label>
+
+                <input
+                    type="date"
+                    id="bookingDate"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- TIME -->
+
+            <div class="form-group">
+
+                <label for="bookingTime">
+                    Appointment Time
+                </label>
+
+                <input
+                    type="time"
+                    id="bookingTime"
+                    required
+                >
+
+            </div>
+
+
+
+            <!-- ADDRESS -->
+
+            <div class="form-group">
+
+                <label for="address">
+                    Service Address
+                </label>
+
+                <textarea
+                    id="address"
+                    rows="4"
+                    placeholder="Enter your pickup / service address"
+                    required
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- INSTRUCTION -->
+
+            <div class="form-group">
+
+                <label for="instruction">
+                    Appointment Query
+                    <span>(Optional)</span>
+                </label>
+
+                <textarea
+                    id="instruction"
+                    rows="3"
+                    placeholder="Any special request?"
+                ></textarea>
+
+            </div>
+
+
+
+            <!-- PAYMENT -->
+
+            <div class="form-group">
+
+                <label for="payment">
+                    Payment Method
+                </label>
+
+                <select
+                    id="payment"
+                    required
+                >
+
+                    <option value="">
+                        Select Payment Method
+                    </option>
+
+                    <option value="Cash">
+                        Cash
+                    </option>
+
+                    <option value="Online">
+                        Online
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <button
+                type="submit"
+                class="booking-btn"
+            >
+
+                Confirm Membership Booking
+
+            </button>
+
+
+        </form>
+
+    </div>
+
+</section>
+
+
+
+<script src="membership-booking.js"></script>
+
+</body>
+
+</html>

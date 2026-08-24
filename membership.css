@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8fc;
+    color: #172033;
+}
+
+
+/* ================= HEADER ================= */
+
+.subscription-header {
+    background: linear-gradient(135deg,#172b4d);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.header-content h1 {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.header-content p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+
+/* ================= SECTION ================= */
+
+.plans-section {
+    width: 92%;
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.section-tag {
+    display: inline-block;
+    background: #e5f0ff;
+    color: #0866d8;
+    padding: 7px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    margin: 14px 0 8px;
+}
+
+.section-heading p {
+    color: #687386;
+    font-size: 16px;
+}
+
+.quarterly-tag {
+    background: #fff1df;
+    color: #e67b00;
+}
+
+
+/* ================= SERVICE BOX ================= */
+
+.service-box {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 30px rgba(20, 45, 80, 0.08);
+    border: 1px solid #e7edf5;
+}
+
+.service-title {
+    margin-bottom: 25px;
+}
+
+.service-title h3 {
+    font-size: 24px;
+    margin-bottom: 7px;
+}
+
+.service-title p {
+    color: #737d8c;
+    font-size: 15px;
+}
+
+
+/* ================= PLAN GRID ================= */
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ================= PLAN CARD ================= */
+
+.plan-card {
+    position: relative;
+    border: 1px solid #e1e7ef;
+    border-radius: 15px;
+    padding: 28px 22px;
+    text-align: center;
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+.plan-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(20, 45, 80, 0.12);
+    border-color: #1474e5;
+}
+
+.plan-card h4 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.price {
+    color: #0866d8;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.plan-card > span {
+    color: #8a94a3;
+    font-size: 13px;
+}
+
+
+/* ================= FEATURES ================= */
+
+.plan-card ul {
+    list-style: none;
+    margin: 22px 0;
+    text-align: left;
+}
+
+.plan-card li {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #505b6c;
+}
+
+.plan-card li::before {
+    content: "✓";
+    color: #0a72df;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.plan-btn {
+    display: block;
+    text-decoration: none;
+    background: #ffd54f;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.plan-btn:hover {
+    background: #064b9f;
+}
+
+
+/* ================= POPULAR ================= */
+
+.popular {
+    border: 2px solid #0866d8;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0866d8;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    background: #172b4d;
+    color: #aeb7c5;
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+    .plans-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .subscription-header {
+        padding: 45px 18px;
+    }
+
+    .header-content h1 {
+        font-size: 30px;
+    }
+
+    .header-content p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .plans-section {
+        width: 94%;
+        margin: 40px auto;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .service-box {
+        padding: 20px 15px;
+        border-radius: 14px;
+        margin-bottom: 25px;
+    }
+
+    .service-title h3 {
+        font-size: 20px;
+    }
+
+    .service-title p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .plan-card {
+        padding: 25px 20px;
+    }
+
+    .price {
+        font-size: 30px;
+    }
+
+    .plan-card li {
+        font-size: 13px;
+    }
+
+    .plan-btn {
+        padding: 13px;
+    }
+
+}

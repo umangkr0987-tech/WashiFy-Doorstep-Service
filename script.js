@@ -1016,7 +1016,7 @@ form.addEventListener("submit", function(e){
     // Appointment Instruction
     const instruction = document.getElementById("intruction").value;
 
-const whatsappNumber = "919341676414"; // Apna Number
+const whatsappNumber = ""; // Apna Number
 const text =
 `🚗 *New Car Wash Booking*
 👤 Name: ${name}
